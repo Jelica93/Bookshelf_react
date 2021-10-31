@@ -1,0 +1,87 @@
+.selected-book {
+  width: 100%;
+  max-width: 800px;
+
+  .selected,
+  form {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 10px;
+
+    div {
+      width: 50%;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, .075);
+
+      p {
+        padding: 0;
+        margin: 0;
+
+        &:first-child {
+          margin-bottom: 5px;
+        }
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input:not([type="submit"]):not([type="checkbox"]), select {
+        width: 100%;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, .15);
+        height: 38px;
+        padding: 0 10px;
+        transition: border .5s;
+
+        &:focus {
+          outline: 0;
+          border-bottom-color: rgb(30, 255, 225);
+        }
+      }
+
+      .preview {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        span {
+          font-weight: normal;
+          display: inline-block;
+          margin-right: 10px;
+        }
+      }
+
+      &.input {
+        width: 100%;
+      }
+    }
+  }
+
+  .related {
+    width: 100%;
+    padding: 10px;
+
+    .book-card {
+      padding: 5px;
+      width: 25%;
+
+      .content {
+        top: 5px;
+        left: 5px;
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+      }
+
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+}

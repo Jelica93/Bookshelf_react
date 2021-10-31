@@ -1,0 +1,53 @@
+.new-book {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 100%;
+  max-width: 800px;
+
+  form {
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .075);
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input:not([type="submit"]):not([type="checkbox"]), select {
+      width: 100%;
+      border-radius: 0;
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, .15);
+      height: 38px;
+      padding: 0 10px;
+      transition: border .5s;
+
+      &:focus {
+        outline: 0;
+        border-bottom-color: rgb(30, 255, 225);
+      }
+    }
+
+    .preview {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      span {
+        font-weight: normal;
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.books-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 46px calc(100% - 46px);
+  grid-template-columns: 220px calc(100% - 220px);
+
+  .header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #ececec;
+    box-shadow: 0 2px 10px -6px;
+    border-bottom: 2px solid rgba(0, 0, 0, .075);
+  }
+
+  .sidebar {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #40407a;
+    border-right: 2px solid #40407a;
+  }
+
+  .content {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    overflow-y: scroll;
+  }
+}

@@ -1,0 +1,80 @@
+.login-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 15px -10px;
+  width: 100%;
+  max-width: 400px;
+
+  button, input[type="submit"] {
+    cursor: pointer;
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  .content {
+    width: 100%;
+
+    .user-form {
+      width: 100%;
+
+      .input {
+        width: 100%;
+        padding: 10px;
+
+        label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 5px;
+          cursor: pointer;
+        }
+
+        input:not([type="submit"]) {
+          width: 100%;
+          border-radius: 0;
+          border: none;
+          border-bottom: 1px solid rgba(0, 0, 0, .15);
+          height: 38px;
+          padding: 0 10px;
+          transition: border .5s;
+
+          &:focus {
+            outline: 0;
+            border-bottom-color: rgb(30, 255, 225);
+          }
+        }
+      }
+
+      .action {
+
+        .input {
+          padding-top: 0;
+        }
+      }
+
+      .error {
+        width: 100%;
+        padding: 10px;
+        background-color: rgb(248, 128, 85);
+
+        p {
+          font-weight: bold;
+          color: #fff;
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .toggle {
+    border-top: 1px solid rgba(0, 0, 0, .15);
+    width: 100%;
+    padding: 10px;
+  }
+}
